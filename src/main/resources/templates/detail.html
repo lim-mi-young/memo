@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>메모 수정 및 삭제</title>
+</head>
+<body>
+
+	<form action="/update" method="post">
+		<input type="hidden" name="id"      th:value="${memo.id}" />
+		<input type="text"   name="content" th:value="${memo.content}" />
+		<hr/>
+		<button type="submit">수정</button>	
+	</form> 
+	<form action="/delete" method="get">
+		<input type="hidden" name="id" th:value="${memo.id}" /> 
+		<button type="submit">삭제</button>	
+	</form>
+</body>
+</html>
