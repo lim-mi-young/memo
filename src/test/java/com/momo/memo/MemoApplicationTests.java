@@ -8,8 +8,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest  
 class MemoApplicationTests {
 
-	@Autowired
-	private MemoRepository memoRepository;
+	//@Autowired
+	//private MemoRepository memoRepository;
 	
 	@Test
 	void contextLoads() {
