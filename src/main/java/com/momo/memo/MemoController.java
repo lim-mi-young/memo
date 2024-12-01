@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
+//
 @Controller
 public class MemoController {
 	
@@ -31,7 +31,7 @@ public class MemoController {
 
 	@PostMapping("/save")
 	public String add(@ModelAttribute("memo") Memo memo, Model model) {
-		memoService.saveMemo(memo);
+		memoService.saveMemo(memo);     
 		//return "redirect:/list";				
 		return "redirect:/list-page";
 	}
