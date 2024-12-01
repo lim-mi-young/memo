@@ -1,7 +1,5 @@
 package com.momo.memo;
 
-import java.util.List;
-import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +12,8 @@ class MemoApplicationTests {
 	private MemoRepository memoRepository;
 	
 	@Test
-	void contextLoads() {	
+	void contextLoads() {
+		/*
 			Memo memo1 = new Memo();
 			memo1.setContent("안녕하시렵니까?");			
 			//memoRepository.save(memo1);
@@ -53,7 +52,7 @@ class MemoApplicationTests {
 			//assertEquals(13, memoRepository.findByIdContainingOrContentContaining("2", "a").size());
 			//memoRepository.searchByIdOrContent(1l, "a").forEach(x -> System.out.println(x.getId() + " : " + x.getContent()));
 			//memoRepository.searchByIdContainingOrContentContaining(0, "p").forEach(x -> System.out.println(x.getId() + " : " + x.getContent()));
-
+	*/
 	}
 
 }
